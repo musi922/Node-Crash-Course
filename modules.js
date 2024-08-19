@@ -1,1 +1,2 @@
-const names = require("./people")
+const names = require("./exports")
+console.log(names);
