@@ -1,2 +1,2 @@
-const names = require("./exports")
-console.log(names);
+const {people,ages} = require("./exports")
+console.log(people,ages);
