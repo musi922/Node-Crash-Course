@@ -44,12 +44,12 @@ const fs = require("fs")
 
 //deleting files {THis is different from removing directory one is folder anothe file}
 
-if (fs.existsSync("./docs/deleteme.txt")) {
-    fs.unlink("./docs/deleteme.txt", (err)=>{
-        if (err) {
-            console.log(err);
-        }
-        console.log("file deleted");
+// if (fs.existsSync("./docs/deleteme.txt")) {
+//     fs.unlink("./docs/deleteme.txt", (err)=>{
+//         if (err) {
+//             console.log(err);
+//         }
+//         console.log("file deleted");
         
-    })
-}
+//     })
+// }
