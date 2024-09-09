@@ -37,7 +37,7 @@ router.post("/", (req, res) => {
 });
 
 
-//updating the post
+//updating the pos
 router.put("/:id",(req,res)=>{
   const id = parseInt(req.params.id)
   const post = posts.find((post)=>post.id === id)
