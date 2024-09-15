@@ -11,6 +11,7 @@ router = express.Router();
 // Get all posts or limit posts
 router.get("/", getPosts);
 
+
 // Get post by ID
 router.get("/:id", getPost);
 

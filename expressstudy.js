@@ -18,7 +18,7 @@ app.use(logger);
 //static folders to use now must be in public
 app.use(express.static(path.join(__dirname, "views")));
 
-// Route handling for posts
+// Route handling for post
 app.use("/api/posts", postsRouter);
 
 app.use(notFound);
