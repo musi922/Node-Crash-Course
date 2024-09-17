@@ -13,7 +13,6 @@ app.get("/data", (req, res) => {
 
 app.get("/data/:id", (req, res) => {
   const id = Number(req.params.id);
-  console.log(id);
   fs.readFile("../data.json", (err, data) => {
     if (err) console.log(err);
     const parsedData = JSON.parse(data);
