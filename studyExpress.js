@@ -8,11 +8,11 @@ app.get("/data", (req, res) => {
     if (err) {
       console.log(err);
     }
-    res.send(data);
+    res.send(data); 
   });
 });
 
-app.get("/data/new", (req, res) => {
+app.post("/data/new", (req, res) => {
   fs.readFile("./data.json", (err, data) => {
     if (err) {
       console.log(err);
