@@ -31,7 +31,6 @@ app.post("/data/new", (req, res) => {
     if (err) res.status(404).console.log(err);
     const prevData = JSON.parse(data);
     prevData.push(req.body);
-    console.log(req.body);
 
     fs.writeFile("../data.json", JSON.stringify(prevData), (err) => {
       if (err) res.status(400).send(err);
@@ -75,5 +74,5 @@ app.delete("/data/:id", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("listening to server");
+  console.log("listening to servers");
 });
