@@ -9,7 +9,7 @@ const writestream = fs.createWriteStream("./docs/blog4.txt")
 //     console.log(chunk);
 //     writestream.write("\n New chunk \n")
 //     writestream.write(chunk)
-// })
+// }
 
 //piping
 readStream.pipe(writestream)
